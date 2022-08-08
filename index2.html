@@ -39,7 +39,14 @@
                 <!-- <a-video mindar-image-target="targetIndex: 2" src = "#video1" width="4" height="1.5" position="0 0 0" rotation="0 0 0"></a-video> -->
           <!-- </a-entity> -->
 
-          <a-video mindar-image-target="targetIndex: 2" src="./videos/glow800AR.mp4" width="2", height="1.5" preload="auto" volume="0" muted="true"></a-video>
+          
+
+          <a-video id="video" mindar-image-target="targetIndex: 2" src="./videos/glow800AR.mp4" width="2", height="1.5" preload="auto" volume="0" muted="true">
+            <script>
+                var x = document.getElementById("video").muted;
+            </script>
+          </a-video>
+          
 
 
       </a-scene>
