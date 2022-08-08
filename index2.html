@@ -39,13 +39,17 @@
                 <!-- <a-video mindar-image-target="targetIndex: 2" src = "#video1" width="4" height="1.5" position="0 0 0" rotation="0 0 0"></a-video> -->
           <!-- </a-entity> -->
 
-          
+         
+        <script>
+            var vid = document.getElementById("video");            
+            function MuteAudio(){
+                video.muted;
+            }
+            vid.muted = true;
+        </script>
 
           <a-video id="video" mindar-image-target="targetIndex: 2" src="./videos/glow800AR.mp4" width="2", height="1.25" preload="auto" volume="0" muted="true" muted crossorigin="anonymous" playsinline webkit-playsinline>
-            <script>
-                var vid = document.getElementById("video");
-                vid.muted = true;
-            </script>
+            MuteAudio();
           </a-video>
           
 
